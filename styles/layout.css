@@ -5,3 +5,16 @@
  gap: 20px;
  padding: 20px;
 }
+
+#tip-List {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 20px;
+ padding: 20px;
+ color:black
+}
+
+.tipBox {
+    color: black;
+}

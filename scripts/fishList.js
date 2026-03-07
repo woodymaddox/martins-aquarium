@@ -16,7 +16,7 @@ export const makeFishHtml = () => {
             <p id="fish_title">${fish.name} </p> 
             <ul>
               <li class="fish_species">${fish.species}</li> 
-              <li class="fish_length">${fish.length}</li> 
+              <li class="fish_length">${fish.length} inches</li> 
               <li class="fish_location">${fish.location}</li> 
               <li class="fish_diet">${fish.diet}</li> 
             </ul>
