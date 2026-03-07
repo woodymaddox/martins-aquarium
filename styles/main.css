@@ -1,5 +1,5 @@
 .fishOfTheSea {
-    .movie {
+
     flex-basis: 300px;
     flex-grow: 1;
     max-width: 400px;
@@ -12,4 +12,31 @@
     overflow: hidden;
     transition: transform 0.3s ease;
 }
+
+.fishOfTheSea:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
+
+.fish_card {
+    max-width: 10rem;
+}
+
+ .fishOfTheSea .fish__details .fish_species {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+   
+}
+#fish_title {
+    color: red;
+}
+
+.header {
+  color: red;
+  text-align: center; 
+}
+
+
