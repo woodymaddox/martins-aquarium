@@ -6,7 +6,7 @@ export const database = {
             length: 3,
             location: "Great Barrier Reef",
             diet: "Omnivore",
-            image: "styles/images/Clown fish.jpeg"
+            image: "styles/images/clownfish.jpeg"
         },
         {
             name: "Dory",
@@ -14,7 +14,7 @@ export const database = {
             length: 10,
             location: "Great Barrier Reef",
             diet: "Omnivore",
-            image: "styles/images/Blue Tang.jpeg"
+            image: "styles/images/bluetang.jpeg"
         },
         {
             name: "Gill",
@@ -22,7 +22,7 @@ export const database = {
             length: 7,
             location: "Great Barrier Reef",
             diet: "Omnivore",
-            image: "styles/images/Moorish Idol.jpeg"
+            image: "styles/images/moorish-idol.jpeg"
         },
         {
             name: "Bloat",
@@ -30,7 +30,7 @@ export const database = {
             length: 5,
             location: "Great Barrier Reef",
             diet: "Carnivore",
-            image: "styles/images/Porcupine pufferfish.jpeg"
+            image: "styles/images/porcupine-pufferfish.jpeg"
         },
         {
             name: "Bubbles",
@@ -38,7 +38,7 @@ export const database = {
             length: 8,
             location: "Great Barrier Reef",
             diet: "Herbivore",
-            image: "styles/images/Yellow Tang.jpeg"
+            image: "styles/images/yellow-tang.jpeg"
         },
         {
             name: "Gurgle",
@@ -46,7 +46,7 @@ export const database = {
             length: 4,
             location: "Great Barrier Reef",
             diet: "Carnivore",
-            image: "styles/images/Royal Gamma.jpeg"
+            image: "styles/images/royal-gramma.jpeg"
         },
     ]
 }

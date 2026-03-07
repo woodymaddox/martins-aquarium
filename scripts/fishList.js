@@ -9,19 +9,23 @@ export const makeFishHtml = () => {
 
         for (const fish of database.fish) {
             fishHTML += 
-        `<article class="fishOfTheSea">
-            <img src="${fish.image}" alt="${fish.name} fishName" class="fish_card">
-            
-            <div class="fish_details">
-            <p id="fish_title">${fish.name} </p> 
+        `<div class="card-container">
+        <div class="fishContainer">
+            <img src="${fish.image}" class="fish-image" alt="${fish.name}">
+        </div>
+    <div class="card">
+        
+        <div class="card-content"> 
+            <div class="fish_title">${fish.name}</div>
             <ul>
-              <li class="fish_species">${fish.species}</li> 
-              <li class="fish_length">${fish.length} inches</li> 
-              <li class="fish_location">${fish.location}</li> 
-              <li class="fish_diet">${fish.diet}</li> 
+                <li class="fish_species">${fish.species}</li> 
+                <li class="fish_length">${fish.length} inches</li> 
+                <li class="fish_location">${fish.location}</li> 
+                <li class="fish_diet">${fish.diet}</li> 
             </ul>
-              </div>
-        </article>`;
+        </div>
+    </div>
+</div>`;
         }
     
         return fishHTML

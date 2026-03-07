@@ -1,69 +1,67 @@
-.fishOfTheSea {
 
-    flex-basis: 300px;
-    flex-grow: 1;
-    max-width: 400px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    padding: 1rem 1.5rem;
-   
+* {
+  box-sizing: border-box;
 }
-.tipBox {
- flex-basis: 300px;
-    flex-grow: 1;
-    max-width: 400px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: left;
-    padding: 1rem 1.5rem;
+
+.card-container {
+  display: flex; /* Enables flexbox for the container */
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap;
+  gap: 20px; /* Provides spacing between the cards */
+  width:250px;
+  height: 400px;
+  margin-top: 10px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border:20px;
+  overflow: hidden;
+  opacity: 0.3;
+  
 }
+
+.card{
+   opacity: 0.3;
+}
+
+
+.fish_title {
+  text-align:center
+}
+.card-content {
+  overflow-wrap: break-word;
+  text-align:left;
+  padding: 20px ;
+  
+}
+
+.fish-image {
+  width:100%;
+  height:145px;
+}
+
+
+
+.card img {
+  width:100%;
+  height:145px;
+}
+
 body {
-background-color: grey;
-}
-.fishOfTheSea:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.fish_card {
-    max-width: 10rem;
+background-image: url("/styles/images/water.jpeg");
+background-repeat: no-repeat;            
+    background-size: cover;                 
+  background-attachment: fixed;           
 }
 
+.card-container:hover {
+  background-color: rgb(62,62,62);
+  color: white;
+  cursor: pointer;
+  transform: scale (1.03);
+  
+}
 
-p {
-    color: blue;
-    text-align: center;
-    padding: 1rem; /* Consistent internal spacing */
-  border-radius: 0.5em;
-  font-size: 30px;
-}
-.tiptop {
-  color:red;
-
-}
-.header {
-  color: blue;
-  text-align: center; 
-}
-.tipHeader {
-    color: blue;
-  text-align: center; 
-}
-ul {
-  text-align: left;
-}
-.topic {
-    color: blue;
+.tipHeader , .header {
+  text-align: center;
 }

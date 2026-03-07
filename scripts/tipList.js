@@ -5,15 +5,21 @@ export const makeTipHTML = () => {
 
       for (const tip of tipBase.tips) {
             tipHTML += 
-            ` <article class="tipBox"> 
-               <div>
-                <p class="tiptop"> Tips </p>
-                    <ul>
-                <li class="topic">${tip.topic} </li>
-                <li class="text">${tip.text}</li>
-                    </ul>
-               </div>
-            </article>`;
+            ` <div class="card-container">
+                 <div class="card">   
+            
+                <img src=${tip.image} class="tip-image">
+              
+               
+                <div class="card-content">
+                        <ul>
+                        <li class="topic">${tip.topic} </li>
+                        <li class="text">${tip.text}</li>
+                         </ul>
+                 </div>
+                </div>
+             </div>
+    `;
 
       }
 
