@@ -9,7 +9,8 @@ export const makeFishHtml = () => {
 
         for (const fish of database.fish) {
             fishHTML += 
-        `<div class="card-container">
+        `
+        <div class="card-container">
         <div class="fishContainer">
             <img src="${fish.image}" class="fish-image" alt="${fish.name}">
         </div>

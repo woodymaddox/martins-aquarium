@@ -1,6 +1,7 @@
 
 import { renderFishToDom, makeFishHtml } from './fishList.js'
 import { renderTipsToDom, makeTipHTML } from './tipList.js'
+import { makeLocationHtml,renderLocationToDom } from './locationList.js';
 
 //import { tipList } from './tipList.js'
 //import { locationList } from './locationList.js'
@@ -17,7 +18,9 @@ renderFishToDom(fishHTML)
 const tipHTML = makeTipHTML();
 renderTipsToDom(tipHTML)
 
-// Generate the location list
-//const locationHTML = locationList()
+
+const locationHTML = makeLocationHtml();
+renderLocationToDom(locationHTML)
+
 
 // Render each HTML string to the correct DOM element
