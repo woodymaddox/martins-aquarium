@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+.box {
+  display: grid;
+  grid-template-columns: ;
+}
+
+
+
 .card-container {
   display: flex; /* Enables flexbox for the container */
   justify-content: center; /* Centers the cards horizontally */

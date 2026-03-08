@@ -10,6 +10,7 @@ export const makeFishHtml = () => {
         for (const fish of database.fish) {
             fishHTML += 
         `
+        <div class="container-one">
         <div class="card-container">
         <div class="fishContainer">
             <img src="${fish.image}" class="fish-image" alt="${fish.name}">
@@ -26,6 +27,7 @@ export const makeFishHtml = () => {
             </ul>
         </div>
     </div>
+</div>
 </div>`;
         }
     
