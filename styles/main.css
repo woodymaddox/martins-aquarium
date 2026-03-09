@@ -1,31 +1,25 @@
 
-* {
-  box-sizing: border-box;
+#fish-list, #tip-List, #location-list {
+  border: 2px solid red; /* Temporary: see how wide the container actually is */
 }
 
-.box {
-  display: grid;
-  grid-template-columns: ;
+#tipHeader{
+  justify-content: center;
 }
-
-
 
 .card-container {
-  display: flex; /* Enables flexbox for the container */
-  justify-content: center; /* Centers the cards horizontally */
-  flex-wrap: wrap;
   gap: 20px; /* Provides spacing between the cards */
-  width:250px;
-  height: 400px;
+  width:200px;
+  min-height: 300px;
+  height:auto;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.2); 
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border:20px;
-  overflow: hidden;
-  position: relative;
   z-index: 1;
-  
+  color: white;
+  box-sizing: border-box;
 }
 
 
@@ -35,17 +29,10 @@
 .card-content {
   overflow-wrap: break-word;
   text-align:left;
-  padding: 20px ;
+ 
 color: white;
   
 }
-
-.fish-image ,.location-image {
-  width:100%;
-  height:145px;
-  opacity: 1;
-}
-
 
 
 .card img {
@@ -60,6 +47,7 @@ background-repeat: no-repeat;
   background-attachment: fixed;           
 }
 
+
 .card-container:hover {
   background-color: rgb(62,62,62, 0.2);
   color: white;
@@ -68,7 +56,7 @@ background-repeat: no-repeat;
   
 }
 
-.tipHeader , .header, .locationHeader {
+#tipHeader , .header, .locationHeader {
   
   color: #fff;
   text-align: center;
