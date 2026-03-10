@@ -1,75 +1,75 @@
 
-#fish-list, #tip-List, #location-list {
-  border: 2px solid red; /* Temporary: see how wide the container actually is */
-}
 
-#tipHeader{
+#tipHeader {
   justify-content: center;
 }
 
 .card-container {
-  gap: 20px; /* Provides spacing between the cards */
-  width:200px;
+  gap: 20px; 
+  width: 200px;
   min-height: 300px;
-  height:auto;
+  height: auto;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.2); 
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border:20px;
+  border: 20px;
   z-index: 1;
   color: white;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-
-.fish_title ,.location_title {
-  text-align:center
+.fish_title,
+.location_title {
+  text-align: center;
 }
 .card-content {
   overflow-wrap: break-word;
-  text-align:left;
- 
-color: white;
-  
+  text-align: left;
+
+  color: white;
 }
 
-
 .card img {
-  width:100%;
-  height:145px;
+  width: 100%;
+  height: 145px;
 }
 
 body {
-background-image: url("/styles/images/water.jpeg");
-background-repeat: no-repeat;            
-    background-size: cover;                 
-  background-attachment: fixed;           
+  background-image: url("/styles/images/water.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
 .card-container:hover {
-  background-color: rgb(62,62,62, 0.2);
+  background-color: rgb(62, 62, 62, 0.2);
   color: white;
   cursor: pointer;
   transform: scale (1.03);
-  
 }
 
-#tipHeader , .header, .locationHeader {
-  
+.fish_title {
+  color: purple;
+}
+.location_title {
+  color: lightseagreen;
+}
+
+.loc-header,
+.header {
   color: #fff;
   text-align: center;
-  animation: glow 1s ease-in-out infinite alternate; /* Apply the animation */
-}
+  animation: pinkGlow 1s ease-in-out infinite alternate; }
 
-@keyframes glow {
+@keyframes pinkGlow {
   from {
     text-shadow:
       0 0 10px #fff,
       0 0 20px #fff,
-      0 0 30px #e60073, /* A vibrant pink color */
-      0 0 40px #e60073,
+      0 0 30px #e60073,
+      /* A vibrant pink color */ 0 0 40px #e60073,
       0 0 50px #e60073,
       0 0 60px #e60073,
       0 0 70px #e60073;
@@ -86,3 +86,63 @@ background-repeat: no-repeat;
   }
 }
 
+.fish_reg,
+.fish_sol,
+.fish_holy,
+.fish-header {
+  color: #fff;
+  text-align: center;
+  animation: purpleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes purpleGlow {
+  from {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #bc13fe,
+      0 0 40px #bc13fe,
+      0 0 50px #bc13fe,
+      0 0 60px #bc13fe,
+      0 0 70px #bc13fe;
+  }
+  to {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #bc13fe,
+      0 0 20px #bc13fe,
+      0 0 25px #bc13fe,
+      0 0 30px #bc13fe,
+      0 0 35px #bc13fe;
+  }
+}
+
+.tip-header {
+  color: #fff;
+  text-align: center;
+  animation: cyanGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes cyanGlow {
+  from {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #00ffff,
+      0 0 40px #00ffff,
+      0 0 50px #00ffff,
+      0 0 60px #00ffff,
+      0 0 70px #00ffff;
+  }
+  to {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #00ffff,
+      0 0 20px #00ffff,
+      0 0 25px #00ffff,
+      0 0 30px #00ffff,
+      0 0 35px #00ffff;
+  }
+}

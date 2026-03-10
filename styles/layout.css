@@ -1,61 +1,84 @@
-
 #page {
   display: grid;
   width: auto;
   min-height: 100%;
   grid-template-areas:
     "header header "
+    "fish-head tip-head"
     "main aside"
-    "loc-head loc-head"
-    "section section"
+    "loc-head ."
+    "section ."
     "footer footer";
-  grid-template-rows:  auto auto auto auto;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 
-#page > header {  
+#header {
+  grid-area: header;
+  background-color: rgba(3, 25, 36);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page > header {
   grid-area: header;
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
 }
 
-
-
-#page > main{
- grid-area: main;
- gap: 20px;
- padding: 20px;
- display: flex;       
+#page > main {
+  grid-area: main;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   align-content: flex-start;
 }
 
-#page > aside{
- grid-area: aside;
- gap: 20px;
- padding: 20px;
- display: flex;       
- flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-
+#page > aside {
+  grid-area: aside;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.fish-header {
+  grid-area: fish-head;
+  text-align: center;
+}
+.tip-header {
+  grid-area: tip-head;
+  text-align: center;
+}
+.loc-header {
+  grid-area: loc-head;
+  text-align: center;
 }
 
-.loc-header  { grid-area: loc-head;  text-align: center; }
-
 #page > section {
-grid-area: section;
-gap: 20px;
- padding: 20px;
- display: flex;       
- flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-
+  gap: 20px;
+  padding: 20px;
+  grid-area: section;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
 
 #page > footer {
@@ -63,4 +86,3 @@ justify-content: center;
   padding: 20px;
   text-align: center;
 }
-

@@ -1,12 +1,10 @@
-import { locationBase } from './locationData.js'
+import { locationBase } from "./locationData.js";
 
 export const makeLocationHtml = () => {
-        let locationHTML = '';
+  let locationHTML = "";
 
-        for (const location of locationBase.locations) {
-            locationHTML += 
-           
-        `
+  for (const location of locationBase.locations) {
+    locationHTML += `
          
 <div class="card-container">
        
@@ -27,18 +25,16 @@ export const makeLocationHtml = () => {
             </div>
        </div>
  </div>`;
-        }
-    
-        return locationHTML
-}
+  }
+
+  return locationHTML;
+};
 
 export const renderLocationToDom = (locationHTML) => {
-    const listOfLocations = document.getElementById
-    ('location-list');
-    if (listOfLocations) {
-        listOfLocations.innerHTML = locationHTML; }     
-    else {
-        console.error ('Could not find element with id "location-list"')
-    }
-
+  const listOfLocations = document.getElementById("location-list");
+  if (listOfLocations) {
+    listOfLocations.innerHTML = locationHTML;
+  } else {
+    console.error('Could not find element with id "location-list"');
+  }
 };
