@@ -87,7 +87,7 @@ export const database = {
       length: 15,
       location: "Coral Reefs",
       diet: "Carnivore",
-      image: "styles/images/pink sea star.jpeg",
+      image: "styles/images/PinkSeasSar.jpeg",
     },
     {
       name: "Bloat",
