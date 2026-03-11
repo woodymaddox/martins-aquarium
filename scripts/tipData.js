@@ -1,3 +1,5 @@
+//Data base for the tipList module
+
 export const tipBase = {
   tips: [
     {

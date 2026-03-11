@@ -1,3 +1,5 @@
+//Database for the locationList module
+
 export const locationBase = {
   locations: [
     {
