@@ -1,0 +1,46 @@
+sequenceDiagram
+    participant User
+    participant Browser
+    participant main.js
+    participant fishList.js
+    participant tipList.js
+    participant locationList.js
+    participant aquariumData.js
+    participant tipData.js
+    participant locationData.js
+    participant DOM
+
+    User->>Browser: Load index.html
+    Browser->>Browser: Parse HTML and load scripts
+    Browser->>main.js: Execute main.js
+
+    main.js->>fishList.js: Import makeFishHtml, renderFishToDom
+    main.js->>tipList.js: Import makeTipHTML, renderTipsToDom
+    main.js->>locationList.js: Import makeLocationHtml, renderLocationToDom
+
+    main.js->>fishList.js: makeFishHtml()
+    fishList.js->>aquariumData.js: Import database
+    aquariumData.js-->>fishList.js: Return database
+    fishList.js->>fishList.js: Loop through fish, create HTML cards
+    fishList.js-->>main.js: Return fishHTML
+
+    main.js->>fishList.js: renderFishToDom(fishHTML)
+    fishList.js->>DOM: document.getElementById("fish-list").innerHTML = fishHTML
+
+    main.js->>tipList.js: makeTipHTML()
+    tipList.js->>tipData.js: Import database
+    tipData.js-->>tipList.js: Return database
+    tipList.js->>tipList.js: Loop through tips, create HTML
+    tipList.js-->>main.js: Return tipHTML
+
+    main.js->>tipList.js: renderTipsToDom(tipHTML)
+    tipList.js->>DOM: document.getElementById("tip-List").innerHTML = tipHTML
+
+    main.js->>locationList.js: makeLocationHtml()
+    locationList.js->>locationData.js: Import database
+    locationData.js-->>locationList.js: Return database
+    locationList.js->>locationList.js: Loop through locations, create HTML
+    locationList.js-->>main.js: Return locationHTML
+
+    main.js->>locationList.js: renderLocationToDom(locationHTML)
+    locationList.js->>DOM: document.getElementById("location-list").innerHTML = locationHTML
